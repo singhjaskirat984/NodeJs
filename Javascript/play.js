@@ -13,3 +13,43 @@ console.log(summarizedUser(name,age,hasHobbies));
 // let name = 'Max';
 // const age = '29';
 // let hasHobbies = true;
+
+// anonymous function
+const summarizedUser = function (userName, userAge, userHasHobby){
+    return('Name is ' + userName + ', age is ' + userAge + 'and the user has hobbies: ' + userHasHobby);
+}
+
+// arrow function
+const summarizedUser = (userName, userAge, userHasHobby) => {
+    return('Name is ' + userName + ', age is ' + userAge + 'and the user has hobbies: ' + userHasHobby);
+}
+
+const add = (a,b) => {
+    return a+b;
+}
+
+// or
+
+const add = (a,b) => a+b;
+
+const addOne = a => a+1;
+
+const addRandom = () => 1+2;
+
+const person = {
+    name: 'Max',
+    age: 29,
+    greet: () => {
+        console.log('Hi, I am ' + this.name);
+    }
+};
+
+const person = {
+    name: 'Max',
+    age: 29,
+    greet() {
+        console.log('Hi, I am ' + this.name);
+    }
+};
+
+person.greet();
