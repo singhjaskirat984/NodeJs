@@ -67,3 +67,13 @@ console.log(hobbies.map(hobby => {
 console.log(hobbies);
 // prints: [Sports, Cooking]
 
+hobbies.push('programming');
+console.log(hobbies);
+
+const copiedArray = hobbies.splice();
+console.log(copiedArray);
+
+const copiedArray = [hobbies];
+console.log(copiedArray);
+// prints [[Sports, Cooking]]
+// new array where the first element is the old array
