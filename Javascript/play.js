@@ -77,3 +77,35 @@ const copiedArray = [hobbies];
 console.log(copiedArray);
 // prints [[Sports, Cooking]]
 // new array where the first element is the old array
+
+// Spread operator
+const copiedArray = [...hobbies];
+console.log(copiedArray);
+// Prints: [Sports, Cooking]
+// it takes out all the elements from previous array
+// and puts them into new array
+
+// Rest operator
+const toArray = (...args) => {
+    return args;
+};
+
+console.log(toArray(1,2,3,4));
+console.log(toArray(1,2,3,4,5,6,7,8,));
+// any amount of args you mention above will be printed 
+// with the help of spread operator
+
+const printName = (personData) => {
+    console.log(personData.name);
+}
+
+printName(person);
+
+// object destructuring
+const {name, age} = person;
+console.log(name, age);
+
+// Array destructuring
+const [hobby1, hobby2] = hobbies;
+console.log(hobby1, hobby2);
+
